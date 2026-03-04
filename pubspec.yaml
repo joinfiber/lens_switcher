@@ -1,0 +1,32 @@
+name: lens_switcher
+description: >-
+  Physical camera lens switching for Flutter on Android.
+  Automatically discovers ultra-wide, main, and telephoto lenses via CameraX
+  and their exact zoom switching points. No hardcoded values — works on any device.
+version: 0.3.0
+repository: https://github.com/joinfiber/lens_switcher
+issue_tracker: https://github.com/joinfiber/lens_switcher/issues
+topics:
+  - camera
+  - camerax
+  - lens
+  - zoom
+  - android
+
+environment:
+  sdk: ^3.0.0
+  flutter: ">=3.16.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_lints: ^5.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.fiber.lens_switcher
+        pluginClass: LensSwitcherPlugin
